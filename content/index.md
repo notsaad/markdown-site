@@ -24,6 +24,21 @@ Computer Science Student at the University of Ottawa
 ## Experience
 
 <div class="job">
+<img src="/assets/logos/applied.png" alt="Applied Intuition" class="company-logo">
+<div class="job-content">
+
+### Engineering
+
+#### Applied Intuition | Sunnyvale, California | July 2026
+
+- Graphics programming
+
+**C++**
+
+</div>
+</div>
+
+<div class="job">
 <img src="/assets/logos/tesla.png" alt="Tesla" class="company-logo">
 <div class="job-content">
 
