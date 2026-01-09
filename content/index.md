@@ -23,6 +23,10 @@ Computer Science Student at the University of Ottawa
 
 ## Experience
 
+<div class="job">
+<img src="/assets/logos/tesla.png" alt="Tesla" class="company-logo">
+<div class="job-content">
+
 ### Software Engineer Intern
 
 #### Tesla | Palo Alto, California | May 2025 - August 2025
@@ -32,6 +36,13 @@ Computer Science Student at the University of Ottawa
 - Presented project at Department All Hands (800+ engineers) and received maximum possible performance review
 
 **Go, gRPC, Protobufs**
+
+</div>
+</div>
+
+<div class="job">
+<img src="/assets/logos/tesla.png" alt="Tesla" class="company-logo">
+<div class="job-content">
 
 ### Software Engineer Intern
 
@@ -43,6 +54,13 @@ Computer Science Student at the University of Ottawa
 
 **TypeScript, React, Go**
 
+</div>
+</div>
+
+<div class="job">
+<img src="/assets/logos/nokia.png" alt="Nokia" class="company-logo">
+<div class="job-content">
+
 ### Software Engineer Intern
 
 #### Nokia | Ottawa, Ontario | May 2024 - August 2024
@@ -51,6 +69,13 @@ Computer Science Student at the University of Ottawa
 - Helped maintain and improve network testbed infrastructure
 
 **Go**
+
+</div>
+</div>
+
+<div class="job">
+<img src="/assets/logos/nokia.png" alt="Nokia" class="company-logo">
+<div class="job-content">
 
 ### Software Engineer Intern
 
@@ -61,6 +86,13 @@ Computer Science Student at the University of Ottawa
 
 **Go, C**
 
+</div>
+</div>
+
+<div class="job">
+<img src="/assets/logos/diffraction.png" alt="Diffraction Limited" class="company-logo">
+<div class="job-content">
+
 ### Software Engineer Intern
 
 #### Diffraction Limited | Ottawa, Ontario | May 2023 - August 2023
@@ -70,6 +102,9 @@ Computer Science Student at the University of Ottawa
 - Created a RESTful API using Typescript to serve parsed error data to a React frontend, enabling real-time error monitoring and analysis
 
 **C++, TypeScript, React, SQLite**
+
+</div>
+</div>
 
 ---
 

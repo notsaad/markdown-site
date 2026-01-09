@@ -176,6 +176,35 @@ pre code {
   padding: 0;
 }
 
+/* Job entries with logos */
+.job {
+  display: flex;
+  gap: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.company-logo {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+  flex-shrink: 0;
+  margin-top: 1.5rem;
+  border-radius: 8px;
+}
+
+.job-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.job-content h3 {
+  margin-top: 1.5rem;
+}
+
+.job-content h3:first-child {
+  margin-top: 0;
+}
+
 /* Responsive */
 @media (max-width: 600px) {
   html {
@@ -192,5 +221,14 @@ pre code {
 
   .container > h1:first-child {
     font-size: 2rem;
+  }
+
+  .company-logo {
+    width: 40px;
+    height: 40px;
+  }
+
+  .job {
+    gap: 1rem;
   }
 }
