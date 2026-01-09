@@ -53,9 +53,31 @@ body {
 
 /* Layout */
 .container {
-  max-width: var(--max-width);
+  max-width: 1200px;
   margin: 0 auto;
   padding: 3rem var(--spacing);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+}
+
+.left-column,
+.right-column {
+  min-width: 0;
+}
+
+.left-column h1:first-child {
+  font-size: 2.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.left-column h1:first-child + p {
+  margin-bottom: 0.25rem;
+}
+
+.left-column h1:first-child + p + p {
+  color: var(--text-muted);
+  margin-bottom: 0;
 }
 
 /* Typography */
@@ -127,19 +149,9 @@ hr {
   margin: 2rem 0;
 }
 
-/* Header Section */
-.container > h1:first-child {
-  font-size: 2.5rem;
-  margin-bottom: 0.75rem;
-}
-
-.container > h1:first-child + p {
-  margin-bottom: 0.25rem;
-}
-
-.container > h1:first-child + p + p {
-  color: var(--text-muted);
-  margin-bottom: 0;
+/* Right column adjustments */
+.right-column h2:first-child {
+  margin-top: 0;
 }
 
 /* Experience/Job entries */
@@ -180,7 +192,7 @@ pre code {
 .job {
   display: flex;
   gap: 1.25rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 .company-logo {
@@ -206,6 +218,17 @@ pre code {
 }
 
 /* Responsive */
+@media (max-width: 900px) {
+  .container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .right-column h2:first-child {
+    margin-top: 3rem;
+  }
+}
+
 @media (max-width: 600px) {
   html {
     font-size: 15px;
@@ -219,7 +242,7 @@ pre code {
     font-size: 1.75rem;
   }
 
-  .container > h1:first-child {
+  .left-column h1:first-child {
     font-size: 2rem;
   }
 

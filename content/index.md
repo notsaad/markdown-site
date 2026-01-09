@@ -3,23 +3,13 @@ title: Saad Mazhar
 description: Computer Science Student at the University of Ottawa
 ---
 
+<div class="left-column">
+
 # SAAD MAZHAR
 
 [saadmazhar@me.com](mailto:saadmazhar@me.com)
 
-Computer Science Student at the University of Ottawa
-
----
-
-## Education
-
-### University of Ottawa
-
-#### Honors BSc in Computer Science, Minor in Philosophy
-
-*September 2021 - April 2026*
-
----
+Computer Science Student at the University of Ottawa, graduating April 2026
 
 ## Experience
 
@@ -98,7 +88,9 @@ Computer Science Student at the University of Ottawa
 </div>
 </div>
 
----
+</div>
+
+<div class="right-column">
 
 ## Projects
 
@@ -114,9 +106,9 @@ A lightweight interpreter from scratch for a custom programming language, suppor
 
 React Native mobile app for the uOttaHack 6 Hackathon that calculates clothing items' environmental impact through quantitative analysis based on clothing tag information.
 
----
-
 ## Contact
 
 - [GitHub](https://github.com/notsaad)
 - [LinkedIn](https://linkedin.com/in/notsaad)
+
+</div>
