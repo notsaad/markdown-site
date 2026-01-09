@@ -46,9 +46,7 @@ Computer Science Student at the University of Ottawa
 
 #### Tesla | Palo Alto, California | January 2025 - August 2025
 
-- Deployed an internal AI Agent with multi-tool calling capabilities and presented at Department All Hands (800+ engineers)
-- Worked full-stack on Tesla's electrical distribution management system servicing 10,000+ engineers worldwide
-- Implemented concurrent data processing pipelines using goroutines and channels, improving backend throughput
+- Built full-stack features and deployed an internal AI Agent, presenting at Department All Hands (800+ engineers)
 
 **Go, TypeScript, React, gRPC**
 
@@ -63,8 +61,7 @@ Computer Science Student at the University of Ottawa
 
 #### Nokia | Ottawa, Ontario | May 2024 - August 2024
 
-- Created Go based CLI tools for network configuration management that automated previously manual processes
-- Helped maintain and improve network testbed infrastructure
+- Created Go CLI tools for network configuration management that automated previously manual processes
 
 **Go**
 
@@ -79,8 +76,7 @@ Computer Science Student at the University of Ottawa
 
 #### Nokia | Ottawa, Ontario | September 2023 - December 2023
 
-- Developed Go automation scripts to eliminate redundant In-Service-Software-Upgrade (ISSU) functions and structures
-- Streamlined codebase maintenance by automating the identification and removal of obsolete code structures
+- Developed Go automation scripts to eliminate redundant ISSU functions and streamline codebase maintenance
 
 **Go, C**
 
@@ -95,9 +91,7 @@ Computer Science Student at the University of Ottawa
 
 #### Diffraction Limited | Ottawa, Ontario | May 2023 - August 2023
 
-- Designed and implemented a robust C++ enumeration system to efficiently translate hex codes into corresponding error messages, reducing error interpretation time by 90%
-- Optimized SQL database schema for parsed log data, resulting in a 50% improvement in query response times
-- Created a RESTful API using Typescript to serve parsed error data to a React frontend, enabling real-time error monitoring and analysis
+- Built a full-stack error monitoring system with a C++ backend and React frontend, improving error interpretation time by 90%
 
 **C++, TypeScript, React, SQLite**
 
