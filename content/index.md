@@ -47,26 +47,11 @@ Computer Science Student at the University of Ottawa, graduating April 2026
 <img src="/assets/logos/nokia.png" alt="Nokia" class="company-logo">
 <div class="job-content">
 
-### Software Engineer Intern
+### Software Engineer Intern (x2)
 
-#### Nokia | Ottawa, Ontario | May 2024 - August 2024
+#### Nokia | Ottawa, Ontario | Sep - Dec 2023, May - Aug 2024
 
-- Created Go CLI tools for network configuration management that automated previously manual processes
-
-**Go**
-
-</div>
-</div>
-
-<div class="job">
-<img src="/assets/logos/nokia.png" alt="Nokia" class="company-logo">
-<div class="job-content">
-
-### Software Engineer Intern
-
-#### Nokia | Ottawa, Ontario | September 2023 - December 2023
-
-- Developed Go automation scripts to eliminate redundant ISSU functions and streamline codebase maintenance
+- Built Go CLI tools and automation scripts for network configuration and codebase maintenance
 
 **Go, C**
 
