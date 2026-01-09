@@ -226,6 +226,41 @@ pre code {
   margin-top: 0;
 }
 
+/* Education entry */
+.education {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+.education-logo {
+  width: 56px;
+  height: 56px;
+  object-fit: contain;
+  flex-shrink: 0;
+  border-radius: 8px;
+}
+
+.education-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.education-content h3 {
+  margin-top: 0;
+  margin-bottom: 0.25rem;
+}
+
+.education-content p {
+  margin-bottom: 0.25rem;
+  color: var(--text-muted);
+}
+
+.education-content em {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
 /* Responsive */
 @media (max-width: 900px) {
   .container {
