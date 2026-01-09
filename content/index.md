@@ -19,9 +19,9 @@ Computer Science Student at the University of Ottawa, graduating April 2026
 
 ### Engineering
 
-#### Applied Intuition | Sunnyvale, California | July 2026
+#### Applied Intuition | Sunnyvale, California | Jul 2026
 
-- Graphics programming
+- Incoming July, graphics programming
 
 **C++**
 
@@ -32,9 +32,9 @@ Computer Science Student at the University of Ottawa, graduating April 2026
 <img src="/assets/logos/tesla.png" alt="Tesla" class="company-logo">
 <div class="job-content">
 
-### Software Engineer Intern
+### Software Engineer Intern (x2)
 
-#### Tesla | Palo Alto, California | January 2025 - August 2025
+#### Tesla | Palo Alto, California | Jan 2025 - Aug 2025
 
 - Built full-stack features and deployed an internal AI Agent, presenting at Department All Hands (800+ engineers)
 
@@ -64,7 +64,7 @@ Computer Science Student at the University of Ottawa, graduating April 2026
 
 ### Software Engineer Intern
 
-#### Diffraction Limited | Ottawa, Ontario | May 2023 - August 2023
+#### Diffraction Limited | Ottawa, Ontario | May 2023 - Aug 2023
 
 - Built a full-stack error monitoring system with a C++ backend and React frontend, improving error interpretation time by 90%
 
