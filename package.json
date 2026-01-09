@@ -1,0 +1,17 @@
+{
+  "name": "saad-mazhar-site",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "build": "node build.js",
+    "dev": "node build.js --watch",
+    "serve": "npx serve dist"
+  },
+  "dependencies": {
+    "marked": "^17.0.0",
+    "gray-matter": "^4.0.3"
+  },
+  "devDependencies": {
+    "chokidar": "^4.0.0"
+  }
+}
