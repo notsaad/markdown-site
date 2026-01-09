@@ -154,6 +154,15 @@ hr {
   margin-top: 0;
 }
 
+/* GitHub activity chart */
+.right-column img[alt="GitHub Contribution Chart"] {
+  width: 100%;
+  max-width: 100%;
+  border-radius: 4px;
+  filter: invert(1) hue-rotate(180deg);
+  opacity: 0.9;
+}
+
 /* Experience/Job entries */
 h3 + h4 {
   margin-top: 0;

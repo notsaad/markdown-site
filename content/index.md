@@ -92,6 +92,10 @@ Computer Science Student at the University of Ottawa, graduating April 2026
 
 <div class="right-column">
 
+## GitHub Activity
+
+![GitHub Contribution Chart](https://ghchart.rshah.org/notsaad)
+
 ## Projects
 
 ### [HABO Framework for Hyperparameter Optimization](https://arxiv.org/abs/2503.10282)
