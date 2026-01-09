@@ -44,30 +44,13 @@ Computer Science Student at the University of Ottawa
 
 ### Software Engineer Intern
 
-#### Tesla | Palo Alto, California | May 2025 - August 2025
+#### Tesla | Palo Alto, California | January 2025 - August 2025
 
-- Deployed an internal AI Agent with multi-tool calling capabilities
-- Engineered AI LLM integrations and tooling into existing internal workflows
-- Presented project at Department All Hands (800+ engineers) and received maximum possible performance review
+- Deployed an internal AI Agent with multi-tool calling capabilities and presented at Department All Hands (800+ engineers)
+- Worked full-stack on Tesla's electrical distribution management system servicing 10,000+ engineers worldwide
+- Implemented concurrent data processing pipelines using goroutines and channels, improving backend throughput
 
-**Go, gRPC, Protobufs**
-
-</div>
-</div>
-
-<div class="job">
-<img src="/assets/logos/tesla.png" alt="Tesla" class="company-logo">
-<div class="job-content">
-
-### Software Engineer Intern
-
-#### Tesla | Palo Alto, California | January 2025 - April 2025
-
-- Worked full-stack on Tesla's electrical distribution management system servicing 10,000+ engineers worldwide using Go, React TypeScript, GraphQL and Kubernetes
-- Leveraged goroutines and channels to implement concurrent data processing pipelines, significantly improving the throughput and responsiveness of backend services
-- Wrote efficient GraphQL queries to return data from a MySQL database with millions of records
-
-**TypeScript, React, Go**
+**Go, TypeScript, React, gRPC**
 
 </div>
 </div>
