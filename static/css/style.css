@@ -271,6 +271,15 @@ pre code {
   width: 100%;
 }
 
+.single-column > p:first-child a {
+  color: var(--text-muted);
+  font-size: 0.85rem;
+}
+
+.single-column > p:first-child a:hover {
+  color: var(--accent);
+}
+
 /* Responsive */
 @media (max-width: 900px) {
   .container {
