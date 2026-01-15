@@ -261,6 +261,16 @@ pre code {
   color: var(--text-muted);
 }
 
+/* Single column layout for blog */
+.container:has(.single-column) {
+  grid-template-columns: 1fr;
+  max-width: var(--max-width);
+}
+
+.single-column {
+  width: 100%;
+}
+
 /* Responsive */
 @media (max-width: 900px) {
   .container {
