@@ -34,9 +34,7 @@ Honors BSc Computer Science, Minor in Philosophy
 
 #### Applied Intuition | Sunnyvale, California | Jul 2026
 
-- Incoming July, graphics programming
-
-**C++**
+- Incoming July, sensor simulation team
 
 </div>
 </div>
@@ -51,8 +49,6 @@ Honors BSc Computer Science, Minor in Philosophy
 
 - Built full-stack features and deployed an internal AI Agent, presenting at Department All Hands (800+ engineers)
 
-**Go, TypeScript, React, gRPC**
-
 </div>
 </div>
 
@@ -66,8 +62,6 @@ Honors BSc Computer Science, Minor in Philosophy
 
 - Built Go CLI tools and automation scripts for network configuration and codebase maintenance
 
-**Go, C**
-
 </div>
 </div>
 
@@ -80,8 +74,6 @@ Honors BSc Computer Science, Minor in Philosophy
 #### Diffraction Limited | Ottawa, Ontario | May 2023 - Aug 2023
 
 - Built a full-stack error monitoring system with a C++ backend and React frontend, improving error interpretation time by 90%
-
-**C++, TypeScript, React, SQLite**
 
 </div>
 </div>
