@@ -9,6 +9,21 @@ description: Computer Science Student at the University of Ottawa
 
 [saadmazhar@me.com](mailto:saadmazhar@me.com)
 
+## Education
+
+<div class="education">
+<img src="/assets/logos/uottawa.png" alt="University of Ottawa" class="education-logo">
+<div class="education-content">
+
+### University of Ottawa
+
+Honors BSc Computer Science, Minor in Philosophy
+
+*Graduating Apr 2026*
+
+</div>
+</div>
+
 ## Experience
 
 <div class="job">
@@ -75,20 +90,9 @@ description: Computer Science Student at the University of Ottawa
 
 <div class="right-column">
 
-## Education
+## Blog
 
-<div class="education">
-<img src="/assets/logos/uottawa.png" alt="University of Ottawa" class="education-logo">
-<div class="education-content">
-
-### University of Ottawa
-
-Honors BSc Computer Science, Minor in Philosophy
-
-*Graduating Apr 2026*
-
-</div>
-</div>
+[View blog posts](/blog)
 
 ## GitHub Activity
 
