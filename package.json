@@ -5,7 +5,8 @@
   "scripts": {
     "build": "node build.js",
     "dev": "node build.js --watch",
-    "serve": "npx serve dist"
+    "serve": "npx serve dist",
+    "deploy": "npm run build && wrangler pages deploy dist --project-name site"
   },
   "dependencies": {
     "marked": "^17.0.0",
