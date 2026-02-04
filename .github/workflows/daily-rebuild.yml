@@ -6,6 +6,10 @@ on:
     - cron: '0 6 * * *'
   workflow_dispatch: # Allow manual triggering
 
+permissions:
+  contents: read
+  deployments: write
+
 jobs:
   rebuild-and-deploy:
     runs-on: ubuntu-latest
