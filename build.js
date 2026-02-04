@@ -2,15 +2,50 @@ import { marked } from 'marked';
 import matter from 'gray-matter';
 import fs from 'fs/promises';
 import path from 'path';
+import https from 'https';
 
 const CONTENT_DIR = 'content';
 const TEMPLATES_DIR = 'templates';
 const STATIC_DIR = 'static';
 const DIST_DIR = 'dist';
+const GITHUB_USERNAME = 'notsaad';
 
 async function clean() {
   await fs.rm(DIST_DIR, { recursive: true, force: true });
   await fs.mkdir(DIST_DIR, { recursive: true });
+}
+
+async function fetchGitHubChart() {
+  const url = `https://ghchart.rshah.org/${GITHUB_USERNAME}`;
+  const outputPath = path.join(STATIC_DIR, 'assets', 'github-chart.svg');
+
+  return new Promise((resolve, reject) => {
+    https.get(url, (response) => {
+      if (response.statusCode !== 200) {
+        console.warn(`Failed to fetch GitHub chart: ${response.statusCode}`);
+        resolve(); // Don't fail the build if this fails
+        return;
+      }
+
+      const chunks = [];
+      response.on('data', (chunk) => chunks.push(chunk));
+      response.on('end', async () => {
+        try {
+          const svgData = Buffer.concat(chunks);
+          await fs.mkdir(path.dirname(outputPath), { recursive: true });
+          await fs.writeFile(outputPath, svgData);
+          console.log('Fetched latest GitHub chart');
+          resolve();
+        } catch (err) {
+          console.warn('Failed to save GitHub chart:', err.message);
+          resolve(); // Don't fail the build
+        }
+      });
+    }).on('error', (err) => {
+      console.warn('Failed to fetch GitHub chart:', err.message);
+      resolve(); // Don't fail the build
+    });
+  });
 }
 
 async function copyDir(src, dest) {
@@ -86,6 +121,9 @@ async function build() {
 
   // Clean and create dist directory
   await clean();
+
+  // Fetch latest GitHub chart
+  await fetchGitHubChart();
 
   // Read template
   const template = await fs.readFile(

@@ -88,7 +88,7 @@ Honors BSc Computer Science, Minor in Philosophy
 
 ## GitHub Activity
 
-![GitHub Contribution Chart](https://ghchart.rshah.org/notsaad)
+![GitHub Contribution Chart](/assets/github-chart.svg)
 
 ## Projects
 
