@@ -26,6 +26,7 @@ Honors BSc Computer Science, Minor in Philosophy
 
 ## Experience
 
+<!-- Applied Intuition - uncomment when position starts
 <div class="job">
 <img src="/assets/logos/applied.png" alt="Applied Intuition" class="company-logo">
 <div class="job-content">
@@ -38,6 +39,7 @@ Honors BSc Computer Science, Minor in Philosophy
 
 </div>
 </div>
+-->
 
 <div class="job">
 <img src="/assets/logos/tesla.png" alt="Tesla" class="company-logo">
