@@ -1,6 +1,9 @@
 name: Daily GitHub Chart Update
 
 on:
+  push:
+    branches:
+      - main
   schedule:
     # Run daily at 6:00 AM UTC (1:00 AM EST / 2:00 AM EDT)
     - cron: '0 6 * * *'
