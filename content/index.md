@@ -49,7 +49,7 @@ Honors BSc Computer Science, Minor in Philosophy
 
 #### Tesla | Palo Alto, California | Jan 2025 - Aug 2025
 
-- Built full-stack features and deployed an internal AI Agent, presenting at Department All Hands (800+ engineers)
+- Built full-stack features and deployed an internal AI Agent, presented project at Department All Hands (800+ engineers)
 
 </div>
 </div>
