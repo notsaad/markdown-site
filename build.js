@@ -84,9 +84,50 @@ async function getMarkdownFiles(dir) {
   return files;
 }
 
-async function buildPage(filePath, template) {
+async function getBlogPosts() {
+  const blogDir = path.join(CONTENT_DIR, 'blog');
+  let entries;
+  try {
+    entries = await fs.readdir(blogDir, { withFileTypes: true });
+  } catch {
+    return [];
+  }
+
+  const posts = [];
+  for (const entry of entries) {
+    if (!entry.isFile() || !entry.name.endsWith('.md')) continue;
+    const filePath = path.join(blogDir, entry.name);
+    const raw = await fs.readFile(filePath, 'utf-8');
+    const { data: frontmatter } = matter(raw);
+    const slug = path.basename(entry.name, '.md');
+    posts.push({
+      title: frontmatter.title || slug,
+      description: frontmatter.description || '',
+      date: frontmatter.date ? new Date(frontmatter.date) : new Date(0),
+      url: `/blog/${slug}`,
+    });
+  }
+
+  posts.sort((a, b) => b.date - a.date);
+  return posts;
+}
+
+function renderBlogPostsHtml(posts) {
+  if (posts.length === 0) return '<p>No blog posts yet.</p>';
+  const items = posts
+    .map((p) => {
+      const dateStr = p.date.toISOString().slice(0, 10);
+      const desc = p.description ? ` - ${p.description}` : '';
+      return `<p><a href="${p.url}">${p.title}</a>${desc} <em>(${dateStr})</em></p>`;
+    })
+    .join('\n');
+  return `<div class="blog-listing">${items}</div>`;
+}
+
+async function buildPage(filePath, template, blogPostsHtml) {
   const raw = await fs.readFile(filePath, 'utf-8');
-  const { data: frontmatter, content } = matter(raw);
+  const { data: frontmatter, content: rawContent } = matter(raw);
+  const content = rawContent.replace(/\{\{blog-posts\}\}/g, blogPostsHtml || '');
   const html = marked.parse(content);
 
   const title = frontmatter.title || 'Saad Mazhar';
@@ -116,14 +157,16 @@ async function buildPage(filePath, template) {
   console.log(`Built: ${outputPath}`);
 }
 
-async function build() {
+async function build({ skipChartFetch = false } = {}) {
   console.log('Building site...\n');
 
   // Clean and create dist directory
   await clean();
 
   // Fetch latest GitHub chart
-  await fetchGitHubChart();
+  if (!skipChartFetch) {
+    await fetchGitHubChart();
+  }
 
   // Read template
   const template = await fs.readFile(
@@ -131,11 +174,15 @@ async function build() {
     'utf-8'
   );
 
+  // Generate blog listing
+  const blogPosts = await getBlogPosts();
+  const blogPostsHtml = renderBlogPostsHtml(blogPosts);
+
   // Process all markdown files
   const markdownFiles = await getMarkdownFiles(CONTENT_DIR);
 
   for (const file of markdownFiles) {
-    await buildPage(file, template);
+    await buildPage(file, template, blogPostsHtml);
   }
 
   // Copy static assets
@@ -154,16 +201,37 @@ async function watch() {
 
   console.log('Watching for changes...\n');
 
+  let building = false;
+  let pendingBuild = false;
+
+  async function rebuild() {
+    if (building) {
+      pendingBuild = true;
+      return;
+    }
+    building = true;
+    try {
+      await build({ skipChartFetch: true });
+    } catch (err) {
+      console.error('Build error:', err.message);
+    }
+    building = false;
+    if (pendingBuild) {
+      pendingBuild = false;
+      await rebuild();
+    }
+  }
+
   const watcher = chokidar.default.watch([CONTENT_DIR, TEMPLATES_DIR, STATIC_DIR], {
     ignoreInitial: true,
   });
 
   watcher.on('all', async (event, filePath) => {
     console.log(`\n${event}: ${filePath}`);
-    await build();
+    await rebuild();
   });
 
-  // Initial build
+  // Initial build (fetch chart once)
   await build();
 }
 
