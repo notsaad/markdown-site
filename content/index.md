@@ -26,7 +26,6 @@ Honors BSc Computer Science, Minor in Philosophy
 
 ## Experience
 
-<!-- Applied Intuition - uncomment when position starts
 <div class="job">
 <img src="/assets/logos/applied.png" alt="Applied Intuition" class="company-logo">
 <div class="job-content">
@@ -35,11 +34,10 @@ Honors BSc Computer Science, Minor in Philosophy
 
 #### Applied Intuition | Sunnyvale, California | Jul 2026
 
-- Incoming July, sensor simulation team
+- Incoming July, sensor simulation and world models
 
 </div>
 </div>
--->
 
 <div class="job">
 <img src="/assets/logos/tesla.png" alt="Tesla" class="company-logo">
